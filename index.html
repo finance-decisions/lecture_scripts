@@ -9696,7 +9696,7 @@ const MC = [
   why:[&#x27;(+1) · (50.25 − 50.00) / 50.00 = 0.005.&#x27;,&#x27;0.010 would be the full-spread convention, 2 × |p − m| / m.&#x27;,
     &#x27;0.005 × 10,000 = 50 bps.&#x27;,&#x27;That is the full-spread value, not the half-spread.&#x27;,&#x27;p − m = 50.25 − 50.00 = $0.25 per share.&#x27;] },
 
-{ id:28, unit:1, title:&#x27;Walking the book: volume and spreads&#x27;,
+{ id:7, unit:1, title:&#x27;Walking the book: volume and spreads&#x27;,
   stem:`The limit order book for a stock looks as follows:
   &lt;table class=&quot;mini&quot;&gt;&lt;tr&gt;&lt;th&gt;Bid size&lt;/th&gt;&lt;th&gt;Bid ($)&lt;/th&gt;&lt;th&gt;Ask ($)&lt;/th&gt;&lt;th&gt;Ask size&lt;/th&gt;&lt;/tr&gt;
   &lt;tr&gt;&lt;td&gt;300&lt;/td&gt;&lt;td&gt;49.90&lt;/td&gt;&lt;td&gt;50.10&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;/tr&gt;
@@ -9716,7 +9716,7 @@ const MC = [
     `The best ask is indeed $50.20 afterwards: the order took all 200 shares at $50.10 and 200 of the 300 at $50.20, leaving 100. But the best bid is unchanged at $49.90, so the midpoint &lt;b&gt;moves up&lt;/b&gt; to (49.90 + 50.20) / 2 = $50.05, and the half quoted spread widens to $0.15. The statement is false because of the second half.`] },
 
 
-{ id:29, unit:1, title:&#x27;Trade Republic, Xetra and market structure&#x27;,
+{ id:8, unit:1, title:&#x27;Trade Republic, Xetra and market structure&#x27;,
   stem:`A German retail investor uses Trade Republic to submit a market order to buy 200 shares of SAP SE. The order is routed to Xetra, where it executes immediately against existing sell orders in the limit order book. Which statements are correct?`,
   options:[&#x27;The transaction takes place in the primary market because Trade Republic intermediates the trade.&#x27;,
     &#x27;Xetra is an auction market in which prices are determined by matching buy and sell orders.&#x27;,
@@ -9729,7 +9729,7 @@ const MC = [
     &#x27;Trade Republic only routes the client’s order to Xetra and does not trade from its own inventory, so it acts as a &lt;b&gt;broker&lt;/b&gt;.&#x27;,
     &#x27;The buyer pays the seller through clearing and settlement. SAP SE receives money only when it issues new shares.&#x27;,
     &#x27;In an order book, bids, asks and trades are visible to all participants. Dealer quotes are usually less transparent.&#x27;] },
-{ id:30, unit:1, title:&#x27;Limit sell order above the market&#x27;,
+{ id:9, unit:1, title:&#x27;Limit sell order above the market&#x27;,
   stem:`The last traded price of FinTech AG stock is &lt;b&gt;€100&lt;/b&gt;. The best bid is &lt;b&gt;€99.80&lt;/b&gt; and the best ask is &lt;b&gt;€100.20&lt;/b&gt;. An investor submits a &lt;b&gt;limit order to sell 100 shares at €102&lt;/b&gt;. Which statements are correct?`,
   options:[&#x27;The order will execute immediately at the best bid price.&#x27;,
     &#x27;The order guarantees execution but not the execution price.&#x27;,
@@ -9742,7 +9742,7 @@ const MC = [
     &#x27;A limit sell at €102 can only execute at €102 or better (higher).&#x27;,
     &#x27;A limit order &lt;b&gt;reduces&lt;/b&gt; price uncertainty (the price is at least €102) but increases execution uncertainty.&#x27;,
     &#x27;A market order executes immediately against the best available quotes, so there is little uncertainty about &lt;b&gt;when&lt;/b&gt; it executes.&#x27;] },
-{ id:7, unit:2, title:&#x27;Margin investing&#x27;,
+{ id:10, unit:2, title:&#x27;Margin investing&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Leverage amplifies gains and losses (in percentage terms on equity).&#x27;,
     &#x27;If the stock price is unchanged, a margin investor can still lose money due to interest costs.&#x27;,
@@ -9756,7 +9756,7 @@ const MC = [
     &#x27;Higher interest is subtracted from the ending equity, so the levered return falls.&#x27;,
     &#x27;Levered return = [r · (E + B) − i · B] / E, not simply r − i. E.g. 30% unlevered becomes 40.5% levered in SC Q7.&#x27;] },
 
-{ id:8, unit:2, title:&#x27;Maintenance margin&#x27;,
+{ id:11, unit:2, title:&#x27;Maintenance margin&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Equity in a margin account equals market value minus loan balance (including accrued interest).&#x27;,
     &#x27;A margin call occurs when equity/market value falls below the maintenance margin.&#x27;,
@@ -9770,7 +9770,7 @@ const MC = [
     &#x27;The loan stays fixed, so equity falls faster than market value and the ratio falls.&#x27;,
     &#x27;Equity grows faster than market value, so the ratio rises.&#x27;] },
 
-{ id:9, unit:2, title:&#x27;Short selling&#x27;,
+{ id:12, unit:2, title:&#x27;Short selling&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Short sellers borrow shares and sell them, hoping to repurchase later at a lower price.&#x27;,
     &#x27;Short sellers must pay dividends to the share lender while the position is open.&#x27;,
@@ -9783,7 +9783,7 @@ const MC = [
     &#x27;Short sales require margin: the proceeds plus initial margin serve as collateral.&#x27;,
     &#x27;A price increase raises the buy-back cost, which is a loss for the short seller.&#x27;] },
 
-{ id:10, unit:2, title:&#x27;Short account equity&#x27;,
+{ id:13, unit:2, title:&#x27;Short account equity&#x27;,
   stem:&#x27;In a short sale, remaining equity is typically computed as: total account (short proceeds + initial margin) minus buyback cost and dividends. Which are correct?&#x27;,
   options:[&#x27;If price rises, remaining equity falls.&#x27;,&#x27;If price falls, remaining equity rises.&#x27;,
     &#x27;Dividends reduce remaining equity for the short seller.&#x27;,
@@ -9795,7 +9795,7 @@ const MC = [
     &#x27;The comparison uses the current value of the shorted shares, not the original proceeds.&#x27;,
     &#x27;Equity / current market value of the short position is compared with the maintenance margin.&#x27;] },
 
-{ id:26, unit:2, title:&#x27;Margin purchase: margin call and return&#x27;, calc:true,
+{ id:14, unit:2, title:&#x27;Margin purchase: margin call and return&#x27;, calc:true,
   stem:`You buy 400 shares of XYZ at $50 per share. You pay $12,000 with your own money and borrow the rest from your broker at 6% per year. The maintenance margin is 30%. XYZ pays no dividends. Which statements are correct?`,
   options:[&#x27;The initial margin is 60%.&#x27;,
     &#x27;Ignoring interest, you receive a margin call once the price falls below $20.00.&#x27;,
@@ -9809,7 +9809,7 @@ const MC = [
     &#x27;−12% is the stock’s own return. Value = 400 × 44 = $17,600, minus 8,480 gives equity of $9,120. Return = (9,120 − 12,000) / 12,000 = &lt;b&gt;−24%&lt;/b&gt;. Leverage doubles the loss.&#x27;,
     &#x27;Equity is back at $12,000 when 400P − 8,480 = 12,000 ⇒ P = 20,480 / 400 = &lt;b&gt;$51.20&lt;/b&gt;. The stock must rise 2.4% just to cover the interest.&#x27;] },
 
-{ id:27, unit:2, title:&#x27;Short sale: margin call and return&#x27;, calc:true,
+{ id:15, unit:2, title:&#x27;Short sale: margin call and return&#x27;, calc:true,
   stem:`You short 500 shares of ABC at $80 per share. The initial margin is 50% and the maintenance margin is 30%. The short proceeds and the initial margin stay in the account and earn no interest. ABC pays a dividend of $2 per share during the year. Which statements are correct?`,
   options:[&#x27;At initiation, the margin account holds $60,000 in total.&#x27;,
     &#x27;Ignoring the dividend, a margin call occurs once the price rises above about $92.31.&#x27;,
@@ -9823,7 +9823,7 @@ const MC = [
     &#x27;Equity = 60,000 − 500 × 90 − 1,000 = $14,000. Equity ratio = 14,000 / (500 × 90) = &lt;b&gt;31.1%&lt;/b&gt;, still above 30%, so no margin call yet (with the dividend the call price is 59,000 / 650 ≈ $90.77).&#x27;,
     &#x27;Equity = $14,000 (see D). Loss = 14,000 − 20,000 = −$6,000. Return = −6,000 / 20,000 = &lt;b&gt;−30%&lt;/b&gt;.&#x27;] },
 
-{ id:11, unit:3, title:&#x27;MVP vs. tangency portfolio&#x27;,
+{ id:16, unit:3, title:&#x27;MVP vs. tangency portfolio&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;The MVP minimizes variance among risky portfolios.&#x27;,&#x27;The MVP depends on r&lt;sub&gt;f&lt;/sub&gt;.&#x27;,
     &#x27;The tangency portfolio maximizes the Sharpe ratio relative to r&lt;sub&gt;f&lt;/sub&gt;.&#x27;,&#x27;The tangency portfolio depends on r&lt;sub&gt;f&lt;/sub&gt;.&#x27;,
@@ -9833,7 +9833,7 @@ const MC = [
     &#x27;Tangency = the risky portfolio with the highest (E[r] − r&lt;sub&gt;f&lt;/sub&gt;) / σ.&#x27;,&#x27;r&lt;sub&gt;f&lt;/sub&gt; enters the Sharpe ratio, so a change in r&lt;sub&gt;f&lt;/sub&gt; moves the tangency point.&#x27;,
     &#x27;In general they differ. The tangency portfolio lies above the MVP on the efficient frontier.&#x27;] },
 
-{ id:12, unit:3, title:&#x27;Diversification and correlation&#x27;,
+{ id:17, unit:3, title:&#x27;Diversification and correlation&#x27;,
   stem:&#x27;For two risky assets: which statements are correct?&#x27;,
   options:[&#x27;Lower correlation can reduce portfolio volatility for some weights.&#x27;,&#x27;If ρ = +1, there is no diversification benefit.&#x27;,
     &#x27;If ρ &amp;lt; 0, the minimum achievable volatility can be lower than both individual volatilities.&#x27;,
@@ -9846,7 +9846,7 @@ const MC = [
     &#x27;With ρ = 0, the minimum is σ&lt;sub&gt;1&lt;/sub&gt;σ&lt;sub&gt;2&lt;/sub&gt; / √(σ&lt;sub&gt;1&lt;/sub&gt;² + σ&lt;sub&gt;2&lt;/sub&gt;²), which is below the smaller σ. E.g. 20% and 30% give 16.6%.&#x27;,
     &#x27;With ρ = −1, the weights w&lt;sub&gt;1&lt;/sub&gt; = σ&lt;sub&gt;2&lt;/sub&gt;/(σ&lt;sub&gt;1&lt;/sub&gt;+σ&lt;sub&gt;2&lt;/sub&gt;) give zero volatility. For equal σ’s that is 50/50.&#x27;] },
 
-{ id:13, unit:3, title:&#x27;Tangency portfolio weights&#x27;,
+{ id:18, unit:3, title:&#x27;Tangency portfolio weights&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Tangency weights are proportional to Σ&lt;sup&gt;−1&lt;/sup&gt;(μ − r&lt;sub&gt;f&lt;/sub&gt;&lt;b&gt;1&lt;/b&gt;).&#x27;,&#x27;Normalizing ensures weights sum to 1.&#x27;,
     &#x27;The tangency portfolio can change if r&lt;sub&gt;f&lt;/sub&gt; changes.&#x27;,&#x27;The tangency portfolio is defined even without a risk-free asset.&#x27;,
@@ -9858,7 +9858,7 @@ const MC = [
     &#x27;Without a risk-free rate there is no CAL to be tangent, so the tangency portfolio is not defined.&#x27;,
     &#x27;Two-fund separation: everyone holds the same risky portfolio and only chooses the fraction y invested in it.&#x27;] },
 
-{ id:14, unit:3, title:&#x27;CAL properties&#x27;,
+{ id:19, unit:3, title:&#x27;CAL properties&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;The CAL through a risky portfolio has slope equal to its Sharpe ratio.&#x27;,
     &#x27;Moving along the CAL changes both expected return and risk linearly in y.&#x27;,
@@ -9873,7 +9873,7 @@ const MC = [
     &#x27;That tangent line is the optimal CAL.&#x27;] },
 
 
-{ id:31, unit:3, title:&#x27;Optimal risky portfolio and the CAL&#x27;, calc:true,
+{ id:20, unit:3, title:&#x27;Optimal risky portfolio and the CAL&#x27;, calc:true,
   stem:`Fund A has an expected return of 10% and a standard deviation of 20%. Fund B has an expected return of 30% and a standard deviation of 60%. T-bills yield 5%. The correlation is ρ&lt;sub&gt;AB&lt;/sub&gt; = −0.2. The optimal risky portfolio P has weights w&lt;sub&gt;A&lt;/sub&gt; = 0.68 and w&lt;sub&gt;B&lt;/sub&gt; = 0.32. Which statements are correct?`,
   options:[&#x27;The expected return of portfolio P is 16.4%.&#x27;,
     &#x27;The variance of portfolio P is lower than the weighted sum of the individual variances of A and B.&#x27;,
@@ -9886,7 +9886,7 @@ const MC = [
     &#x27;With ρ &amp;lt; 0 the covariance term 2w&lt;sub&gt;A&lt;/sub&gt;w&lt;sub&gt;B&lt;/sub&gt;ρσ&lt;sub&gt;A&lt;/sub&gt;σ&lt;sub&gt;B&lt;/sub&gt; is negative, so it lowers σ&lt;sub&gt;P&lt;/sub&gt;.&#x27;,
     &#x27;σ&lt;sub&gt;P&lt;/sub&gt; = √0.0449 = 21.19%. Slope = (16.4% − 5%) / 21.19% ≈ &lt;b&gt;0.54&lt;/b&gt;, not 0.73.&#x27;,
     &#x27;P has a higher return than A but also higher risk (21.19% vs. 20%), and lower risk than B but also a lower return. So P dominates neither.&#x27;] },
-{ id:15, unit:4, title:&#x27;CAPM&#x27;,
+{ id:21, unit:4, title:&#x27;CAPM&#x27;,
   stem:&#x27;Which statements are correct under CAPM assumptions?&#x27;,
   options:[&#x27;Expected returns depend on beta, not total volatility.&#x27;,&#x27;Idiosyncratic risk is priced in equilibrium.&#x27;,
     &#x27;The Security Market Line (SML) relates expected return to beta.&#x27;,
@@ -9898,7 +9898,7 @@ const MC = [
     &#x27;CML: E[r] = r&lt;sub&gt;f&lt;/sub&gt; + σ · (E[r&lt;sub&gt;M&lt;/sub&gt;] − r&lt;sub&gt;f&lt;/sub&gt;) / σ&lt;sub&gt;M&lt;/sub&gt;, and it applies only to efficient portfolios.&#x27;,
     &#x27;With β = 0, CAPM gives E[r] = r&lt;sub&gt;f&lt;/sub&gt;, not the market return.&#x27;] },
 
-{ id:16, unit:4, title:&#x27;Jensen alpha&#x27;,
+{ id:22, unit:4, title:&#x27;Jensen alpha&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;α&lt;sub&gt;i&lt;/sub&gt; = r&lt;sub&gt;i&lt;/sub&gt; − [r&lt;sub&gt;f&lt;/sub&gt; + β&lt;sub&gt;i&lt;/sub&gt;(r&lt;sub&gt;M&lt;/sub&gt; − r&lt;sub&gt;f&lt;/sub&gt;)].&#x27;,
     &#x27;Positive alpha means outperformance relative to CAPM given beta.&#x27;,
@@ -9910,7 +9910,7 @@ const MC = [
     &#x27;Alpha is the &lt;b&gt;intercept&lt;/b&gt;. The slope is beta.&#x27;,&#x27;No security systematically beats its CAPM-required return.&#x27;,
     &#x27;Its return lies above the SML value at the same beta.&#x27;] },
 
-{ id:17, unit:4, title:&#x27;EMH forms&#x27;,
+{ id:23, unit:4, title:&#x27;EMH forms&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Weak-form efficiency implies past prices cannot be used to earn consistent abnormal returns.&#x27;,
     &#x27;Semi-strong efficiency implies all public information is incorporated into prices quickly.&#x27;,
@@ -9923,7 +9923,7 @@ const MC = [
     &#x27;Semi-strong includes the weak form, so trading on past prices (technical analysis) cannot be profitable.&#x27;,
     &#x27;Weak-form efficiency does not predict any drift. Drift after public news would be evidence &lt;i&gt;against&lt;/i&gt; semi-strong efficiency.&#x27;] },
 
-{ id:18, unit:4, title:&#x27;Anomalies&#x27;,
+{ id:24, unit:4, title:&#x27;Anomalies&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;PEAD is evidence of delayed price response to earnings surprises.&#x27;,
     &#x27;Momentum strategies buy recent winners and sell recent losers.&#x27;,
@@ -9936,7 +9936,7 @@ const MC = [
     &#x27;Once an anomaly is published and traded on, it often shrinks or disappears.&#x27;,
     &#x27;Costs and risks make arbitrage expensive, so some mispricing can survive.&#x27;] },
 
-{ id:19, unit:5, title:&#x27;Treynor–Black vs. Black–Litterman&#x27;,
+{ id:25, unit:5, title:&#x27;Treynor–Black vs. Black–Litterman&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Treynor–Black is primarily a security-selection model based on alphas.&#x27;,
     &#x27;In TB, securities with higher residual variance receive lower active weight, all else equal.&#x27;,
@@ -9950,7 +9950,7 @@ const MC = [
     &#x27;The view-uncertainty matrix Ω expresses how confident the investor is in each view.&#x27;,
     &#x27;Usually the opposite: TB weights can be extreme, while BL was designed to give more stable weights.&#x27;] },
 
-{ id:20, unit:5, title:&#x27;Hedging vs. diversification&#x27;,
+{ id:26, unit:5, title:&#x27;Hedging vs. diversification&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Diversification mainly reduces idiosyncratic risk via imperfect correlations.&#x27;,
     &#x27;Diversification can reduce exposure to some common factors, but does not automatically eliminate market beta.&#x27;,
@@ -9964,7 +9964,7 @@ const MC = [
     &#x27;Shorting index futures lowers the portfolio’s beta.&#x27;] },
 
 
-{ id:33, unit:5, title:&#x27;Hedging a portfolio with index futures&#x27;, calc:true,
+{ id:27, unit:5, title:&#x27;Hedging a portfolio with index futures&#x27;, calc:true,
   stem:`You manage a portfolio worth $1,000,000 with a beta of 1.2. The S&amp;amp;P 500 index is at 1,000 and you expect a market decline of 2.5%. You hedge with S&amp;amp;P 500 futures (multiplier 250). Which statements are correct?`,
   options:[&#x27;The expected loss in the passive portfolio due to the market decline is $25,000.&#x27;,
     &#x27;To hedge the portfolio against a market decline, you should take a short position in S&amp;amp;P 500 futures.&#x27;,
@@ -9977,7 +9977,7 @@ const MC = [
     &#x27;One contract covers 1,000 × 250 = $250,000. N = β × V / (S × multiplier) = 1.2 × 1,000,000 / 250,000 = &lt;b&gt;4.8&lt;/b&gt;.&#x27;,
     &#x27;The short futures lose when the market rises. That loss offsets the portfolio’s gain: a hedge removes both the downside and the upside.&#x27;,
     &#x27;N = 1 × 1,000,000 / 250,000 = &lt;b&gt;4&lt;/b&gt;.&#x27;] },
-{ id:34, unit:5, title:&#x27;Treynor–Black: active portfolio&#x27;, calc:true,
+{ id:28, unit:5, title:&#x27;Treynor–Black: active portfolio&#x27;, calc:true,
   stem:`Following the Treynor–Black framework, you consider adding a single-stock active portfolio to a passive market benchmark. The active portfolio has beta β&lt;sub&gt;A&lt;/sub&gt; = 1.2 and residual (idiosyncratic) variance σ&lt;sub&gt;ε,A&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; = 1%. The market’s standard deviation is σ&lt;sub&gt;M&lt;/sub&gt; = 20%. Which statements are correct?`,
   options:[&#x27;In Treynor–Black, the optimal active portfolio maximizes alpha per unit of idiosyncratic risk.&#x27;,
     &#x27;A higher beta increases the Sharpe-ratio gain from adding the active portfolio.&#x27;,
@@ -9990,7 +9990,7 @@ const MC = [
     &#x27;The relevant measure is the &lt;b&gt;information ratio&lt;/b&gt; α / σ&lt;sub&gt;ε&lt;/sub&gt;, not the Sharpe ratio.&#x27;,
     &#x27;σ&lt;sub&gt;A&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; = β&lt;sup&gt;2&lt;/sup&gt;σ&lt;sub&gt;M&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; + σ&lt;sub&gt;ε&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; = 1.44 × 0.04 + 0.01 = 0.0676, so σ&lt;sub&gt;A&lt;/sub&gt; = &lt;b&gt;26.0%&lt;/b&gt;, not 24.2%.&#x27;,
     &#x27;S&lt;sub&gt;P&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; = S&lt;sub&gt;M&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; + IR&lt;sub&gt;A&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt;: the gain comes only from the information ratio.&#x27;] },
-{ id:21, unit:6, title:&#x27;Pricing a coupon bond (semi-annual)&#x27;,
+{ id:29, unit:6, title:&#x27;Pricing a coupon bond (semi-annual)&#x27;,
   stem:&#x27;A bond has face value $1,000, annual coupon rate 8%, maturity 30 years, and pays coupons semi-annually. The annual yield to maturity is 10% with semi-annual compounding. Which statements are correct?&#x27;,
   options:[&#x27;The semi-annual coupon is $40.&#x27;,&#x27;The number of discounting periods is 30.&#x27;,&#x27;The per-period discount rate is 5%.&#x27;,
     &#x27;The bond price must be below $1,000.&#x27;,&#x27;The bond price equals the PV of an annuity plus the PV of face value.&#x27;],
@@ -9999,7 +9999,7 @@ const MC = [
     &#x27;The coupon rate (8%) is below the yield (10%), so the bond trades at a discount: P ≈ $810.71.&#x27;,
     &#x27;P = 40 × [1 − 1.05&lt;sup&gt;−60&lt;/sup&gt;] / 0.05 + 1,000 / 1.05&lt;sup&gt;60&lt;/sup&gt; ≈ 757.17 + 53.54 = $810.71.&#x27;] },
 
-{ id:22, unit:6, title:&#x27;Clean vs. dirty price&#x27;,
+{ id:30, unit:6, title:&#x27;Clean vs. dirty price&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Dirty price = clean price + accrued interest.&#x27;,&#x27;Clean price includes accrued interest by definition.&#x27;,
     &#x27;Accrued interest increases linearly between coupon dates (under standard day-count approximations).&#x27;,
@@ -10011,7 +10011,7 @@ const MC = [
     &#x27;The buyer receives the full next coupon, so the buyer pays the seller the part already earned.&#x27;,
     &#x27;Accrued interest is never negative, so dirty ≥ clean.&#x27;] },
 
-{ id:23, unit:6, title:&#x27;Bond price basics&#x27;,
+{ id:31, unit:6, title:&#x27;Bond price basics&#x27;,
   stem:&#x27;Consider an option-free coupon bond with positive yield to maturity. Which statements are correct?&#x27;,
   options:[&#x27;A bond’s price moves inversely to its yield to maturity.&#x27;,
     &#x27;If the coupon rate exceeds the yield to maturity, the bond trades at a premium (price &amp;gt; face value).&#x27;,
@@ -10023,7 +10023,7 @@ const MC = [
     &#x27;Only true for a bond priced at par (coupon rate = YTM).&#x27;,&#x27;Pull-to-par: at maturity the price equals the face value.&#x27;,
     &#x27;Different coupons mean different cash flows, so the prices differ. The higher-coupon bond is more expensive.&#x27;] },
 
-{ id:24, unit:6, title:&#x27;Duration basics&#x27;,
+{ id:32, unit:6, title:&#x27;Duration basics&#x27;,
   stem:&#x27;Which statements are correct?&#x27;,
   options:[&#x27;Macaulay duration is the PV-weighted average time of cash flows.&#x27;,&#x27;For a zero-coupon bond, Macaulay duration equals maturity.&#x27;,
     &#x27;For a coupon bond (positive coupon), Macaulay duration is strictly less than maturity.&#x27;,
@@ -10035,7 +10035,7 @@ const MC = [
     &#x27;D* = D / (1 + y), with y matching the compounding period.&#x27;,
     &#x27;Duration is the first-order (slope) sensitivity. Curvature is measured by &lt;b&gt;convexity&lt;/b&gt;.&#x27;] },
 
-{ id:25, unit:6, title:&#x27;Duration and price sensitivity&#x27;,
+{ id:33, unit:6, title:&#x27;Duration and price sensitivity&#x27;,
   stem:&#x27;A bond portfolio has modified duration D* = 9 and market value $10,000,000. Assume a parallel yield increase of 10 bps (0.10%). Which statements are correct?&#x27;,
   options:[&#x27;Approximate percentage price change is −0.90%.&#x27;,&#x27;Approximate dollar change is about −$90,000.&#x27;,
     &#x27;PVBP (dollar change per 1 bp) is about $9,000 per bp.&#x27;,
@@ -10047,7 +10047,7 @@ const MC = [
     &#x27;The linear approximation is symmetric. The actual gain is slightly larger because of convexity.&#x27;,
     &#x27;Duration is only a linear approximation. It ignores convexity, and the error grows with larger yield changes.&#x27;] },
 
-{ id:32, unit:6, title:&#x27;Two-year coupon bond: price and duration&#x27;, calc:true,
+{ id:34, unit:6, title:&#x27;Two-year coupon bond: price and duration&#x27;, calc:true,
   stem:`Muster Inc. invests $250 million in a 2-year corporate bond with 4% annual coupons and a face value equal to the investment amount. Coupons are paid once per year. The (annual) market yield is constant at 4%. Which statements are correct?`,
   options:[&#x27;The annual coupon payment of the bond is $10 million.&#x27;,
     &#x27;The bond’s price at issuance is $250 million.&#x27;,
